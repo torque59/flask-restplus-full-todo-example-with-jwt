@@ -13,18 +13,18 @@ Features:
 
 Installing (in project folder):
 
-    py -m venv venv
-    . venv/Scripts/activate
+    virtualenv .venv
+    source .venv/bin/activate
     # In venv:
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
     export CONFIG_TYPE=dev
-    py manage.py db_init
+    python3 manage.py db_init
 
 
 Running app:
 
     # In venv:
-    py manage.py run
+    python3 manage.py run
 
  And go to: `http://127.0.0.1:5000/api/v1/`
 
